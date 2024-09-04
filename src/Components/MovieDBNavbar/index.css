@@ -1,0 +1,134 @@
+@media (max-width: 991px) {
+  .navbar {
+    background-color: #2c3e50;
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    padding-left: 14px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .title {
+    font-family: roboto;
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  .nav-btn {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    padding: 6px;
+    font-family: roboto;
+    color: #ffffff;
+    margin-right: 14px;
+  }
+
+  .nav-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  .search-box-and-btn-container {
+    width: 50%;
+    display: flex;
+  }
+
+  .search-box {
+    width: 80%;
+    height: 30px;
+    color: #2c3e50;
+    border-radius: 6px;
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 400;
+    align-self: center;
+    margin-right: 4px;
+    padding: 6px;
+  }
+
+  .search-btn {
+    background-color: #ffffff;
+    border-radius: 6px;
+    font-family: roboto;
+    color: #2c3e50;
+    margin-left: 6px;
+    border: 0;
+  }
+
+  .search-btn:hover {
+    background-color: #1c1c1b;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    background-color: #2c3e50;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    padding-left: 24px;
+    width: 100%;
+  }
+
+  .title {
+    font-family: roboto;
+    font-size: 30px;
+    color: #ffffff;
+  }
+
+  .nav-btn {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 8px;
+    font-family: roboto;
+    color: #ffffff;
+    margin-right: 28px;
+  }
+
+  .nav-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  .search-box-and-btn-container {
+    width: 20%;
+    display: flex;
+    align-items: center;
+  }
+
+  .search-box {
+    width: 70%;
+    height: 44px;
+    border-radius: 10px;
+    font-family: roboto;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .search-btn {
+    height: 34px;
+    margin-left: 10px;
+    border-radius: 6px;
+    font-family: roboto;
+    border: 0;
+    font-weight: 500;
+  }
+
+  .search-btn:hover {
+    background-color: #1c1c1b;
+    color: #ffffff;
+  }
+}

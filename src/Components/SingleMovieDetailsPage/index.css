@@ -1,0 +1,276 @@
+@media (max-width: 991px) {
+  .single-movie-details-page {
+    background-color: #161716;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-and-movie-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .movie-poster {
+    margin-right: 12px;
+    width: 70%;
+    /* height: 70vh; */
+  }
+
+  .movie-details {
+    width: 100%;
+    text-align: center;
+  }
+
+  .movie-name {
+    font-family: roboto;
+    color: #ffffff;
+  }
+
+  .star-icon {
+    height: 20px;
+    width: 20px;
+  }
+
+  .movie-details-excluding-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+    flex-wrap: wrap;
+    padding: 12px;
+  }
+
+  .rating {
+    font-family: roboto;
+    color: yellow;
+    margin-right: 4px;
+  }
+
+  .rating-count {
+    font-family: roboto;
+    color: yellow;
+    margin-right: 22px;
+  }
+
+  .duration {
+    font-family: roboto;
+    font-size: 18px;
+    color: #ffffff;
+    margin-right: 20px;
+  }
+
+  /* .genre-heading {
+    font-family: roboto;
+    font-size: 18px;
+    color: #ffffff;
+  } */
+
+  .genre {
+    font-family: roboto;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: 8px;
+  }
+
+  .force-line-break {
+    width: 100%;
+  }
+
+  .release-date {
+    font-family: roboto;
+    font-size: 20px;
+    color: #ffffff;
+    margin-right: 6px;
+    align-self: flex-start;
+  }
+
+  .date-span {
+    font-weight: bold;
+  }
+
+  .overview-container {
+    background-color: rgba(
+      128,
+      128,
+      128,
+      0.5
+    ); /* Light grey background with 50% opacity */
+    border-radius: 10px;
+    text-align: left;
+    width: 100%;
+    padding: 12px;
+  }
+
+  .about-heading {
+    font-family: roboto;
+    font-size: 22px;
+    color: #000000;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .overview {
+    font-family: roboto;
+    font-size: 22px;
+    color: #ffffff;
+  }
+
+  .cast-heading {
+    font-family: roboto;
+    font-size: 22px;
+    color: #ffffff;
+    text-decoration: underline;
+  }
+
+  .cast-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: cente;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .single-movie-details-page {
+    background-color: #161716;
+    min-height: 100vh;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-and-movie-details-container {
+    display: flex;
+  }
+
+  .movie-poster {
+    width: 60%;
+  }
+
+  .movie-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movie-name {
+    font-family: roboto;
+    font-size: 38px;
+    color: #808080;
+  }
+
+  .movie-details-excluding-title {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .star-icon {
+    height: 50px;
+    width: 50px;
+  }
+
+  .rating {
+    font-family: roboto;
+    font-size: 30px;
+    color: yellow;
+    margin-right: 6px;
+  }
+
+  .rating-count {
+    font-family: roboto;
+    font-size: 30px;
+    color: yellow;
+    margin-right: 10px;
+  }
+
+  .duration {
+    font-family: roboto;
+    font-size: 30px;
+    color: #ffffff;
+    margin-right: 12px;
+  }
+
+  .genre {
+    font-family: roboto;
+    font-size: 30px;
+    color: #ffffff;
+    margin-right: 10px;
+  }
+
+  .force-line-break {
+    width: 100%;
+  }
+
+  .release-date-and-overview-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .release-date {
+    font-family: roboto;
+    font-size: 30px;
+    color: #ffffff;
+  }
+
+  .date-span {
+    margin-left: 10px;
+    font-weight: bold;
+    color: yellow;
+  }
+
+  .overview-container {
+    background-color: rgba(
+      128,
+      128,
+      128,
+      0.5
+    ); /* Light grey background with 50% opacity */
+    margin-left: 12px;
+    border-radius: 12px;
+    padding: 15px;
+  }
+
+  .overview {
+    font-family: roboto;
+    font-size: 30px;
+    color: #ffffff;
+  }
+
+  .about-heading {
+    font-family: roboto;
+    font-size: 30px;
+    color: #000000;
+  }
+
+  .overview::first-letter {
+    color: yellow;
+    font-size: 36px;
+  }
+
+  .cast-details-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cast-heading {
+    font-family: roboto;
+    font-size: 40px;
+    color: #ffffff;
+    align-self: center;
+    margin-top: 32px;
+  }
+}
