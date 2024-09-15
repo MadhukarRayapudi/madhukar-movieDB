@@ -25,3 +25,43 @@
     text-decoration: underline;
   }
 }
+
+.prev-btn-and-page-no-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 16px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  /* width: 100%; */
+  background-color: #ffffff;
+  margin: 12px;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.prev-btn {
+  background-color: #ffffff;
+  height: 40px;
+  width: 80px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 1px solid #000000;
+  font-family: roboto;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  border-radius: 6px;
+}
+
+.prev-btn:hover {
+  background-color: #d18752;
+  color: #ffffff;
+}
+
+.page-no {
+  font-family: roboto;
+  font-size: 24px;
+  color: #000000;
+}

@@ -7,15 +7,29 @@ import EachMovieCard from '../EachMovieCard'
 import './index.css'
 
 class UpComingMovies extends Component {
-  state = {upComingMovies: []}
+  state = {upComingMovies: [], pageNumber: 1}
 
   componentDidMount() {
     this.getUpcomingMovies()
   }
 
+  onClickPrevBtn = async () => {
+    const {pageNumber} = this.state
+
+    if (pageNumber > 1) {
+      await this.setState(prevState => ({pageNumber: prevState.pageNumber - 1}))
+    }
+    this.getUpcomingMovies()
+  }
+
+  onClickNextBtn = async () => {
+    await this.setState(prevState => ({pageNumber: prevState.pageNumber + 1}))
+    this.getUpcomingMovies()
+  }
+
   getUpcomingMovies = async () => {
-    const url =
-      'https://api.themoviedb.org/3/movie/upcoming?api_key=00422fa257f90b09d34ccab35d289e80&language=en-US&page=1'
+    const {pageNumber} = this.state
+    const url = `https://api.themoviedb.org/3/movie/upcoming?api_key=00422fa257f90b09d34ccab35d289e80&language=en-US&page=${pageNumber}`
     const response = await fetch(url, {method: 'GET'})
     const parsedData = await response.json()
 
@@ -40,11 +54,29 @@ class UpComingMovies extends Component {
   }
 
   render() {
-    const {upComingMovies} = this.state
+    const {upComingMovies, pageNumber} = this.state
     return (
       <div className="upcoming-movies-page">
         <MovieDBNavbar />
         <h1 className="upcoming-movies-heading"> Upcoming </h1>
+        <div className="prev-btn-and-page-no-container">
+          <button
+            className="prev-btn"
+            type="button"
+            onClick={this.onClickPrevBtn}
+          >
+            Prev
+          </button>
+          <p className="page-no"> Page No. </p>
+          <p className="page-no"> {pageNumber} </p>
+          <button
+            className="prev-btn"
+            onClick={this.onClickNextBtn}
+            type="button"
+          >
+            Next
+          </button>
+        </div>
         <ul className="movie-cards-container">
           {upComingMovies.map(eachMovie => (
             <EachMovieCard eachMovie={eachMovie} key={eachMovie.id} />

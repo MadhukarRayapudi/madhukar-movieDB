@@ -1,6 +1,6 @@
 import {Component} from 'react'
 
-import {CiStar} from 'react-icons/ci'
+// import {CiStar} from 'react-icons/ci'
 
 import MovieDBNavbar from '../MovieDBNavbar'
 
@@ -71,7 +71,6 @@ class SingleMovieDetailsPage extends Component {
             <div className="movie-details">
               <h1 className="movie-name"> {movieDetails.title} </h1>
               <div className="movie-details-excluding-title">
-                <CiStar className="star-icon" />
                 <p className="rating"> {movieDetails.rating} </p>
                 <p className="rating-count"> ({movieDetails.votes}) | </p>
                 <p className="duration">
@@ -116,3 +115,4 @@ class SingleMovieDetailsPage extends Component {
 }
 
 export default SingleMovieDetailsPage
+//  <CiStar className="star-icon" />

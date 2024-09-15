@@ -1,4 +1,4 @@
-import {CiStar} from 'react-icons/ci'
+// import {CiStar} from 'react-icons/ci'
 
 import {Link} from 'react-router-dom'
 
@@ -20,7 +20,6 @@ const EachMovieCard = props => {
         <h1 className="movie-title"> {eachMovie.title} </h1>
         <div className="rating-and-details-btn-container">
           <div className="star-icon-and-rating-container">
-            <CiStar className="star-icon" />
             <p className="movie-rating"> {eachMovie.voteAverage} </p>
             <p className="movie-rating"> ({eachMovie.voteCount}) </p>
           </div>
@@ -34,3 +33,4 @@ const EachMovieCard = props => {
 }
 
 export default EachMovieCard
+// <CiStar className="star-icon" />

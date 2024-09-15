@@ -42,7 +42,7 @@ class SearchedMovies extends Component {
         <MovieDBNavbar />
         <ul className="searched-movies-container">
           {searchedMovieDetails.map(eachMovie => (
-            <EachMovieCard eachMovie={eachMovie} />
+            <EachMovieCard eachMovie={eachMovie} key={eachMovie.id} />
           ))}
         </ul>
       </>

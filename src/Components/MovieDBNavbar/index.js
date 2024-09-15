@@ -30,13 +30,20 @@ class MovieDBNavbar extends Component {
     history.push(`/search-results/${searchBoxValue}`)
   }
 
+  onClickHomeBtn = () => {
+    const {history} = this.props
+    history.replace('/')
+  }
+
   onChangeInputBoxValue = event =>
     this.setState({searchBoxValue: event.target.value})
 
   render() {
     return (
       <div className="navbar">
-        <h1 className="title"> movieDB </h1>
+        <h1 className="title" onClick={this.onClickHomeBtn}>
+          movieDB
+        </h1>
         <div>
           <button
             className="nav-btn"
